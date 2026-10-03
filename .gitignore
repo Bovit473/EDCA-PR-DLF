@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+checkpoints/*.pt
+results/*.csv
+results/*.json
+!results/.gitkeep
+tests/_integrated_test.xlsx
+tests/tmp*/

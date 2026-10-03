@@ -1,0 +1,23 @@
+{
+  "data": {
+    "path": "data/example_well.csv",
+    "input_format": "csv",
+    "well": "A04",
+    "sheet_name": "Integrated",
+    "start_date": null,
+    "end_date": null
+  },
+  "split": {"train_ratio": 0.8, "min_train_points": 8},
+  "dca": {"model": "hyperbolic", "spline_strength": 1.2, "flow_eps": 1e-6},
+  "decomposition": {
+    "n_components": 4,
+    "trials": 50,
+    "noise_width": 0.2,
+    "max_imfs": 3,
+    "sift_max_iter": 60,
+    "sift_sd_thresh": 0.2
+  },
+  "model": {"lookback": 36, "hidden_size": 128, "num_layers": 2, "dropout": 0.22465617154637535},
+  "training": {"epochs": 60, "batch_size": 32, "learning_rate": 0.0030075287849800738, "weight_decay": 0.0, "seed": 42, "device": "auto"},
+  "output": {"results_dir": "results"}
+}
