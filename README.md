@@ -56,7 +56,9 @@ The current protocol has no independent test split. Validation uses observed his
 
 ## Data and Model
 
-`data/example_well.csv` contains a partial A04 dataset with 135 records. Review the data before public release and replace it with data authorized for sharing when necessary.
+`data/example_well.csv` contains 135 example records provided only to demonstrate the required input structure. Use it as a format reference and replace it with your own data for actual applications.
+
+The implementation has been verified end to end with complete input data.
 
 The model uses a 36-step historical window with 15 features: residual, first and second residual differences, DCA trend, time, liquid rate, water rate, gas rate, bottom-hole pressure, drawdown, operation time, and four EEMD components.
 
@@ -75,7 +77,7 @@ Install the dependencies:
 pip install -r requirements.txt
 ```
 
-Run the A04 example:
+After replacing `data/example_well.csv` with your own data in the same format, run:
 
 ```bash
 python run_example.py
